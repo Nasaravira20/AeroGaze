@@ -1,0 +1,16 @@
+# Ultralytics YOLO 🚀, AGPL-3.0 license
+# YOLO tracker settings for ByteTrack tracker with sequential ID assignment emphasis
+
+tracker_type: bytetrack # Tracker type, ['botsort', 'bytetrack']
+track_high_thresh: 0.25 # Threshold for the first association
+track_low_thresh: 0.1 # Threshold for the second association
+new_track_thresh: 0.25 # Threshold for initializing a new track if no match is found
+track_buffer: 30 # Time buffer for retaining tracks without updates
+match_thresh: 0.8 # Threshold for matching existing tracks
+fuse_score: True # Fuse confidence scores with IOU distances before matching
+
+# Sequential ID assignment configuration
+id_assignment_strategy: sequential # Ensures IDs are assigned sequentially (1, 2, 3, ...)
+min_box_area: 10 # Minimum box area to consider for tracking
+max_lost_frames: 30 # Maximum number of frames an object can be lost before reassignment
+
