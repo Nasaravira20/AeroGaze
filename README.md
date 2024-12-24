@@ -52,9 +52,3 @@ Contains video and mission data:
 - PyTorch
 - OpenCV
 - Required Python packages listed in `requirements.txt`
-
-### **Installation**
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/jayaprakashll/AeroGaze.git
-   cd AeroGaze
